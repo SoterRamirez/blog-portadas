@@ -30,3 +30,19 @@ https://soterramirez.github.io/blog-portadas/covers/<serie-slug>/<tema-slug>.png
 ## Licencia
 
 Contenido original. Los títulos provienen de artículos propios del blog.
+
+## Marca
+
+`marca/` contiene el logotipo e isotipo del blog, también generados por código
+(`src/blogdp/logo.py` del repositorio del pipeline).
+
+| Archivo | Uso |
+|---|---|
+| `logo.svg` / `logo.png` / `logo@2x.png` | Lockup horizontal para la cabecera |
+| `isotipo.svg` / `isotipo.png` | Marca cuadrada suelta |
+| `favicon-16/32/48/180/512.png` | Iconos de pestaña y de aplicación |
+
+**Los favicons no son un reescalado del archivo grande.** El isotipo es un nodo con
+tres dependencias, y por debajo de 64 px las líneas finas se empastan en una mancha, así
+que cada tamaño se renderiza desde su propio SVG: los pequeños usan trazo más grueso,
+nodos mayores y opacidad plena.
